@@ -1,0 +1,21 @@
+package prjListaApostila;
+import java.util.Scanner;
+	//Prj Aula04
+public class ConversaoTemperatura {
+	public static void main(String args[]) {
+		Scanner in = new Scanner (System.in);
+		double f, c;
+		
+		System.out.println("Digite o número:");
+		f = in.nextDouble();
+		c = (f-32)/1.8;
+		System.out.println("Atemperatura é " + c + "C°");
+		if (c<15) {
+			System.out.println("Frio");
+		}else if(c<22){
+			System.out.println("Ameno");
+		}else{
+			System.out.println("Calor");
+		}
+	}
+}
